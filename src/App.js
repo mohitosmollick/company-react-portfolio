@@ -11,6 +11,7 @@ const App = () => {
       setLoading(false);
     }, 5000);
   }, []);
+
   return (
     <BrowserRouter>
       <Layout loading={loading}>

@@ -1,7 +1,5 @@
-import React, { CSSProperties } from "react";
+import React from "react";
 import RingLoader from "react-spinners/RingLoader";
-
-const override: CSSProperties = {};
 
 const Layout = ({ children, loading }) => {
   return (
