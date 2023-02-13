@@ -24,16 +24,17 @@ const About = () => {
                 Out Happy Client
               </h2>
               <h4 className="text-xl lg:text-3xl uppercase text-accent font-medium  mb-2 tracking-wide ">
-                total client :{" "}
+                total client :
                 <span className="lg:text-[40px] text-[35px] font-tertiary  text-gradient ">
                   {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                   K+
                 </span>
               </h4>
+              <button className="btn btn-sm">View all Client</button>
 
               <div className="flex  gap-x-8 max-w-max mx-auto mt-6 lg:mx-0 ">
                 <div className="flex border border-2 border-white/50  flex-col items-center rounded-lg p-6">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-content-around">
                     <span className="text-gray-400 text-sm">2d ago</span>
                     <span className="text-emerald-400">
                       <svg
@@ -51,12 +52,68 @@ const About = () => {
                         />
                       </svg>
                     </span>
+
+                    <div class="flex items-center">
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>First star</title>
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Second star</title>
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Third star</title>
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Fourth star</title>
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="w-5 h-5 text-gray-300 dark:text-gray-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>Fifth star</title>
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <p class="ml-2 text-sm font-medium text-white-500 dark:text-gray-400">
+                        4.95 out of 5
+                      </p>
+                    </div>
                   </div>
                   <div className="mt-3 w-fit mx-auto">
                     <img
                       src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe"
                       claclassNamess="rounded-full w-28 "
-                      alt="profile picture"
+                      alt="profile"
                       srcset=""
                     />
                   </div>
@@ -69,18 +126,7 @@ const About = () => {
                   <p className="text-emerald-400 font-semibold mt-2.5">
                     I'm a Freelancer Front-end Developer with over 5 year of
                     experience.Freelancer Front-end Developer with over 5 year
-                    of experience.
                   </p>
-
-                  <div className="h-1 w-full bg-black mt-6 rounded-full">
-                    <div className="h-1 rounded-full w-2/5 bg-yellow-500 "></div>
-                  </div>
-                  <div className="mt-3 text-white text-sm">
-                    <span className="text-gray-400 font-semibold">
-                      Storage:
-                    </span>
-                    <span>40%</span>
-                  </div>
                 </div>
               </div>
             </div>
