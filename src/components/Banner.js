@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaDribbble, FaGithub, FaYoutube } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 import Image from "../assets/avatar.svg";
 import { fadeIn } from "../variants";
@@ -66,7 +66,7 @@ const Banner = () => {
               className=" flex max-w-max gap-x-8 items-center mb-6 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">Contact me</button>
-              <Link to=" " className="text-gradient btn-link">
+              <Link to="/client" className="text-gradient btn-link">
                 My Portfolio
               </Link>
             </motion.div>
