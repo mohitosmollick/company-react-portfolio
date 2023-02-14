@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { fadeIn } from "../variants";
 
 const About = () => {
@@ -30,7 +30,9 @@ const About = () => {
                   K+
                 </span>
               </h4>
-              <button className="btn btn-sm">View all Client</button>
+              <button className="btn btn-sm">
+                <Link to="/client">View all Client</Link>
+              </button>
 
               <div className="flex  gap-x-8 max-w-max mx-auto mt-6 lg:mx-0 ">
                 <div className="flex border border-2 border-white/50  flex-col items-center rounded-lg p-6">
@@ -179,8 +181,10 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact Me</button>
-              <Link to=" " className="text-gradient btn-link">
+              <button className="btn btn-lg">
+                <Link to="contact">Contact Me</Link>
+              </button>
+              <Link to="/portfolio" className="text-gradient btn-link">
                 My Portfolio
               </Link>
             </div>

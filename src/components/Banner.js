@@ -65,8 +65,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" flex max-w-max gap-x-8 items-center mb-6 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <Link to="/client" className="text-gradient btn-link">
+              <button className="btn btn-lg">
+                <Link to="contact">Contact Me</Link>
+              </button>
+              <Link to="/portfolio" className="text-gradient btn-link">
                 My Portfolio
               </Link>
             </motion.div>
