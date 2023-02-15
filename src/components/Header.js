@@ -7,8 +7,8 @@ const Header = () => {
     <header className=" py-8">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Link to=" ">
-            <img src={Logo} alt="" />
+          <Link to="/">
+            <img src={Logo} alt=" " />
           </Link>
           <button className="btn btn-sm">Word with me</button>
         </div>

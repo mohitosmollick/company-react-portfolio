@@ -22,12 +22,6 @@ const services = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
     link: "Learn more",
   },
-  {
-    name: "Product Branding",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet ",
-    link: "Learn more",
-  },
 ];
 
 const Services = () => {
@@ -78,13 +72,14 @@ const Services = () => {
                     >
                       <BsArrowUpRight />{" "}
                     </Link>
-                    <Link to="" className="text-sm text-gradient">
-                      {link}{" "}
+                    <Link to="" className="text-sm text-gradient ">
+                      {link}
                     </Link>
                   </div>
                 </div>
               );
             })}
+            <Link className="btn btn-sm mt-8  items-end">See my Work</Link>
           </motion.div>
         </div>
       </div>

@@ -115,7 +115,7 @@ const About = () => {
                     <img
                       src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe"
                       claclassNamess="rounded-full w-28 "
-                      alt="profile"
+                      alt=" "
                       srcset=""
                     />
                   </div>
