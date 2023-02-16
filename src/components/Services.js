@@ -22,6 +22,12 @@ const services = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
     link: "Learn more",
   },
+  {
+    name: "Disital Marketion",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
+    link: "Learn more",
+  },
 ];
 
 const Services = () => {
@@ -79,7 +85,6 @@ const Services = () => {
                 </div>
               );
             })}
-            <Link className="btn btn-sm mt-8  items-end">See my Work</Link>
           </motion.div>
         </div>
       </div>
