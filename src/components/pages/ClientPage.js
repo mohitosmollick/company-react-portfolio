@@ -4,7 +4,6 @@ import Slider from "react-slick/lib/slider";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { fadeIn } from "../../variants";
-import Header from "../Header";
 
 const ClientPage = () => {
   const settings = {
@@ -17,7 +16,6 @@ const ClientPage = () => {
 
   return (
     <>
-      <Header />
       <section className="">
         <div className="container mx-auto h-screen">
           <div className="flex justify-center gap-y-8 lg:gap-x-12 ">

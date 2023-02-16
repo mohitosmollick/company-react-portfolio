@@ -5,12 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import img1 from "../../assets/portfolio-img1.png";
 import { fadeIn } from "../../variants";
-import Header from "../Header";
 
 const PortfolioPage = () => {
   return (
     <>
-      <Header />
       <section className="">
         <div className="container mx-auto ">
           <div className="flex justify-center gap-y-8 lg:gap-x-12 ">
@@ -34,155 +32,341 @@ const PortfolioPage = () => {
               </div>
             </motion.div>
           </div>
-          <div className="mt-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">
-                  <Link to="#contact">UI/UX Design</Link>
-                </span>
-              </div>
+          <div>
+            <div className="flex justify-between items-center mt-8">
+              <h4 className=" text-xl lg:text-3xl uppercase font-medium  mb-2 tracking-wide ">
+                E-Commerce :
+              </h4>
+              <Link to="/categorysite" className="text-gradient">
+                See All >>
+              </Link>
+            </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">
+                    <Link to="#contact">UI/UX Design</Link>
+                  </span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-4 transtion-all duration-700 z-50">
+                  <span className=" text-gradient text-sm">
+                    <Link to="#contact">See Live..</Link>
+                  </span>
+                </div>
               </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-4 transtion-all duration-700 z-50">
-                <span className=" text-gradient text-sm">
-                  <Link to="#contact">See Live..</Link>
-                </span>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+          </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+          <div>
+            <div className="flex justify-between items-center mt-8">
+              <h4 className=" text-xl lg:text-3xl uppercase font-medium  mb-2 tracking-wide ">
+                Blog/Newspaper :
+              </h4>
+              <Link to="" className="text-gradient">
+                See All >>
+              </Link>
+            </div>
+
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">
+                    <Link to="#contact">UI/UX Design</Link>
+                  </span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-4 transtion-all duration-700 z-50">
+                  <span className=" text-gradient text-sm">
+                    <Link to="#contact">See Live..</Link>
+                  </span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
             </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+          </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
-              </div>
+          <div>
+            <div className="flex justify-between items-center mt-8">
+              <h4 className=" text-xl lg:text-3xl uppercase font-medium  mb-2 tracking-wide ">
+                Company/Business :
+              </h4>
+              <Link to="/categorysite" className="text-gradient">
+                See All >>
+              </Link>
             </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
-              </div>
-            </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">
+                    <Link to="#contact">UI/UX Design</Link>
+                  </span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-4 transtion-all duration-700 z-50">
+                  <span className=" text-gradient text-sm">
+                    <Link to="#contact">See Live..</Link>
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
-            </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
-            </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
-            </div>
-            <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={img1}
-                alt=""
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
-                <span className="text-white text-3xl">Project Title</span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={img1}
+                  alt=""
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transtion-all duration-500 z-50">
+                  <span className="text-gradient">UI/UX Design</span>
+                </div>
+
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transtion-all duration-700 z-50">
+                  <span className="text-white text-3xl">Project Title</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container mx-auto">
-          <hr />
-        </div>
+        <div className="container mb-20 mx-auto"></div>
       </section>
     </>
   );
