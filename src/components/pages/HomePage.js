@@ -10,9 +10,9 @@ const HomePage = () => {
     <>
       <Banner />
       <Nav />
+      <Work />
       <About />
       <Services />
-      <Work />
       <Contact />
     </>
   );

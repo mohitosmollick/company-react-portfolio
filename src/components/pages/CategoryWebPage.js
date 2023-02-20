@@ -46,7 +46,41 @@ const CategoryWebPage = () => {
                 </span>
               </div>
             </div>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
+              <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
 
+              <div class="flex border border-2 border-white/50  flex-col rounded-lg  gap-y-2  p-6">
+                <h5 class="flex justify-center text-2xl font-medium text-gradient">
+                  FB Messenger
+                </h5>
+                <div className="flex justify-center ">
+                  <h2 className="text-gradient text-md">
+                    Price: <span className="text-white">500 $</span>
+                  </h2>
+                </div>
+                <div className="flex">
+                  <ul>
+                    <li>1. This is one Services</li>
+                    <li>This is one Services</li>
+                    <li>This is one Services</li>
+                    <li>This is one Services</li>
+                    <li>This is one Services</li>
+                    <li>This is one Services</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center text-gradient mt-4">
+                  <button className="">
+                    <Link to="/portfolio">Order Now >></Link>
+                  </button>
+                </div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+              </div>
+              <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
+                <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
+              </div>
+            </div>
             <div className="flex justify-center mt-6">
               <h2 className="text-gradient text-2xl">
                 Price: <span className="text-white">500 $</span>
