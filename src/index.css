@@ -24,7 +24,8 @@
 }
 
 .gradient,
-.active {
+.active,
+.activemenu {
   background: linear-gradient(
     92.23deg,
     #406aff 21.43%,
@@ -38,6 +39,12 @@
   color: #fff;
   padding: 1rem;
   border-radius: 100%;
+}
+
+.activemenu {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10%;
 }
 
 @layer base {
