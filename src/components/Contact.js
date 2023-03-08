@@ -65,13 +65,13 @@ const Contact = () => {
 
               <div className="flex  gap-x-8 max-w-max mx-auto lg:mx-0 ">
                 <div class="flex border border-2 border-white/50  flex-col items-center rounded-lg  gap-y-2  p-6">
-                  <BsMessenger className="text-2xl" />
-                  <h5 class=" text-3xl font-medium ">FB Messenger</h5>
+                  <BsWhatsapp className="text-2xl" />
+                  <h5 class=" text-3xl font-medium ">Whatsapp Now</h5>
                   <span class="text-sm mb-1">mohitosmollick</span>
                   <div className="flex">
                     <Link
                       target="_blank"
-                      to="https://m.me/ernest.achiever"
+                      to="https://api.whatsapp.com/send?phone+001980365654"
                       className="text-base text-gradient"
                     >
                       Messeges
@@ -80,13 +80,13 @@ const Contact = () => {
                   </div>
                 </div>
                 <div class="flex border border-2 border-white/50  flex-col items-center rounded-lg  gap-y-2  p-6">
-                  <BsWhatsapp className="text-2xl" />
-                  <h5 class=" text-3xl font-medium ">Whatsapp Now</h5>
+                  <BsMessenger className="text-2xl" />
+                  <h5 class=" text-3xl font-medium ">FB Messenger</h5>
                   <span class="text-sm mb-1">mohitosmollick</span>
                   <div className="flex">
                     <Link
                       target="_blank"
-                      to="https://api.whatsapp.com/send?phone+001980365654"
+                      to="https://m.me/ernest.achiever"
                       className="text-base text-gradient"
                     >
                       Messeges

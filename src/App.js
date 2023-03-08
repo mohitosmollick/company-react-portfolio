@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ClientSlider from "./components/ClientSlider";
 import CategoryWebPage from "./components/pages/CategoryWebPage";
 import ClientPage from "./components/pages/ClientPage";
 import HomePage from "./components/pages/HomePage";
@@ -24,7 +23,6 @@ const App = () => {
           <Route path="client" element={<ClientPage />} />
           <Route path="portfolio" element={<PortfolioPage />} />
           <Route path="categorysite" element={<CategoryWebPage />} />
-          <Route path="slider" element={<ClientSlider />} />
         </Routes>
       </Layout>
     </BrowserRouter>
