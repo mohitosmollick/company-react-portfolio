@@ -1,91 +1,36 @@
-import { motion } from "framer-motion";
 import React from "react";
-import { BsArrowUpRight } from "react-icons/bs";
-import { Link } from "react-scroll";
-import { fadeIn } from "../variants";
-
-const services = [
-  {
-    name: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
-    link: "Learn more",
-  },
-  {
-    name: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscin",
-    link: "Learn more",
-  },
-  {
-    name: "Disital Marketion",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
-    link: "Learn more",
-  },
-  {
-    name: "Disital Marketion",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet",
-    link: "Learn more",
-  },
-];
+import { FiPenTool } from "react-icons/fi";
+import useFetchPost from "../customhook/useFetchData";
 
 const Services = () => {
+  const { data: services } = useFetchPost(`services`);
   return (
-    <section className="section" id="services">
+    <section id="services" className="section">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row ">
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
-          >
-            <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className="h3 max-w-[455px] mb-16 ">
-              I'm a Freelancer Front-end Developer with over 5 year of
-              experience.
-            </h3>
-            <button className="btn btn-sm">See my Work</button>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="flex-1"
-          >
-            {services.map((service, index) => {
-              const { name, description, link } = service;
+        <h2 className="flex items-center text-center justify-center h2 text-accent mb-12">
+          See Our Service
+        </h2>
+        <div className="grid lg:grid-cols-4 gap-8">
+          {services != null &&
+            services.map((item, index) => {
               return (
                 <div
-                  className="border-b border-white/20 h-[130px] my-[8px] flex  "
+                  className="border border-2 border-white/50 rounded-lg gap-x-8 p-6"
                   key={index}
                 >
-                  <div className="max-w-[476px]">
-                    <h4 className="tracking-wider front-primary font-semibold mb-6">
-                      {name}
-                    </h4>
-                    <p className="font-secondary leading-tight">
-                      {description}
-                    </p>
+                  <div className="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-16 text-[28px]">
+                    <FiPenTool />
                   </div>
-                  <div className="flex flex-col flex-1 items-end">
-                    <Link
-                      to=""
-                      className="btn w-9 h-9 mb-[42px] flex justify-center items-center "
-                    >
-                      <BsArrowUpRight />{" "}
-                    </Link>
-                    <Link to="" className="text-sm text-gradient ">
-                      {link}
-                    </Link>
-                  </div>
+                  <h4 className="text-xl font-medium mb-2">
+                    {item.service_name}
+                  </h4>
+                  <p>{item.desc}</p>
+                  <button type="submit" className="btn mt-6 btn-sm">
+                    See Details
+                  </button>
                 </div>
               );
             })}
-          </motion.div>
         </div>
       </div>
     </section>

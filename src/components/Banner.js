@@ -66,7 +66,7 @@ const Banner = () => {
               className=" flex max-w-max gap-x-8 items-center mb-6 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">
-                <Link to="contact">Contact Me</Link>
+                <Link to="">Contact Me</Link>
               </button>
               <Link to="/portfolio" className="text-gradient btn-link">
                 My Portfolio

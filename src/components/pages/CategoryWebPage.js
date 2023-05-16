@@ -81,16 +81,6 @@ const CategoryWebPage = () => {
                 <div className="group-hover:bg-black/70 w-full  absolute z-40 transition-all duration-300"></div>
               </div>
             </div>
-            <div className="flex justify-center mt-6">
-              <h2 className="text-gradient text-2xl">
-                Price: <span className="text-white">500 $</span>
-              </h2>
-            </div>
-            <div className="flex justify-center mt-4">
-              <button className="btn btn-sm ">
-                <Link to="/portfolio">Order Now >></Link>
-              </button>
-            </div>
           </div>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 lg:gap-y-8 gap-y-6 gap-x-4">
             <div className="group relative overflow-hidden  border-2 border-white/50 rounded-xl">
@@ -193,7 +183,7 @@ const CategoryWebPage = () => {
           </div>
         </div>
 
-        <div className="container mb-20 mx-auto"></div>
+        <div className="container-fluid mb-20 mx-auto"></div>
       </section>
     </>
   );
