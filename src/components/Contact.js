@@ -2,6 +2,7 @@ import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import { BsChevronDoubleRight, BsMessenger, BsWhatsapp } from "react-icons/bs";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import { Link } from "react-router-dom";
 import { fadeIn } from "../variants";
 
@@ -79,20 +80,23 @@ const Contact = () => {
                     <BsChevronDoubleRight className="text-base mt-1 " />
                   </div>
                 </div>
+
                 <div class="flex border border-2 border-white/50  flex-col items-center rounded-lg  gap-y-2  p-6">
-                  <BsMessenger className="text-2xl" />
-                  <h5 class=" text-3xl font-medium ">FB Messenger</h5>
-                  <span class="text-sm mb-1">mohitosmollick</span>
-                  <div className="flex">
-                    <Link
-                      target="_blank"
-                      to="https://m.me/ernest.achiever"
-                      className="text-base text-gradient"
-                    >
-                      Messeges
-                    </Link>
-                    <BsChevronDoubleRight className="text-base mt-1 " />
-                  </div>
+                  <MessengerCustomerChat>
+                    <BsMessenger className="text-2xl" />
+                    <h5 class=" text-3xl font-medium ">FB Messenger</h5>
+                    <span class="text-sm mb-1">mohitosmollick</span>
+                    <div className="flex">
+                      <Link
+                        target="_blank"
+                        to="https://m.me/ernest.achiever"
+                        className="text-base text-gradient"
+                      >
+                        Messeges
+                      </Link>
+                      <BsChevronDoubleRight className="text-base mt-1 " />
+                    </div>
+                  </MessengerCustomerChat>
                 </div>
               </div>
             </div>

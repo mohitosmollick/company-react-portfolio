@@ -69,7 +69,7 @@ const Projects = () => {
               </Link>
 
               <p className="capitalize text-accent text-sm mb-3">
-                {item.category}
+                {item.category} Category name
               </p>
               <Link to="">
                 <h3 className="text-2xl font-semibold capitalize mb-3">
